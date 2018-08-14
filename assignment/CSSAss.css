@@ -1,0 +1,391 @@
+@font-face{
+    src: url("font/font.otf");
+    font-family: font;
+    font-weight: bolder;
+}
+*{      
+    margin: 0;
+    padding: 0;
+}
+    /* Home page CSS */
+body:before{
+    content: '  ';
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    opacity: 0.05;
+}
+.header{    
+   display: flex;
+  justify-content: space-between;
+  background: #111111;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: default;
+  left: 0;
+  line-height: 3.25rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.shahir,.menu,.Education{
+    background: #111111;
+    color: rgba(255, 255, 255, 0.5);
+}
+.shahir,.Education,.Portfolio{
+    margin-left: 15px;
+    text-decoration: none;
+}
+.menu{
+    width: 70px;
+    text-decoration: none;
+    margin-left: 600px; 
+}
+.shahir:hover,.menu:hover,.Education:hover{
+    color: aliceblue;
+}
+.nav{
+    position: absolute;
+    margin-left: 900px;
+}
+.nav a{
+    visibility: hidden;
+    text-decoration: none;
+    margin: 10px;
+}
+.nav:hover a{
+    color: rgb(46, 33, 16);
+}
+
+.heading{
+
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 0;
+  display: -ms-flexbox;
+  height: 20rem !important;
+  min-height: 15rem;
+  position: relative;
+  text-align: center;
+  width: 100%; 
+    top: 52px;
+    background-image: linear-gradient(rgba(17, 17, 17, 0.25), rgba(17, 17, 17, 0.25)), url("images/pc.jpg");
+    margin: 0;
+    padding: 0;
+}
+.assignment{
+    text-align: center;
+    color: darkblue;
+    padding-top: 150px;
+    font-size: 40px;
+    font-family: font;  
+}
+.assignment:hover{
+    color: #111111;
+}
+.inner{ 
+    border-radius: 5px;
+    margin: 70px;
+    margin-left: 200px;
+    background-color: white;
+    height: 100%;
+    width: 930px;
+}
+.mar1,.mar12{
+    margin-top: 10px;   
+}
+.mar12{
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20%; 
+}
+.content{
+    padding: 15px;
+}
+.footer{
+    background-color: #111111;
+    width: 100%;
+    display: flex;
+    margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: auto;
+}
+.programming{
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.5);
+    width: 70%;
+    float: left;
+    padding-left: 30px;
+}
+.front1{
+    padding-bottom: 30px;
+    padding-top:15px; 
+    padding-left: 300px;
+    width:  30% ;
+    float: left;
+    color: rgba(255, 255, 255, 0.5);  
+}
+.list li:hover{
+    color: wheat;
+}
+/* Education page CSS */
+.headingEdu{
+
+    background-position:  center;
+    background-size: cover;
+    border-top: 0;
+    display: -ms-flex;
+    height: 30rem !important;
+    min-height: 15rem;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    top: 52px;
+    background-image: linear-gradient(rgba(17, 17, 17, 0.25), rgba(17, 17, 17, 0.25)), url("images/brain.jpg");
+    margin: 0;
+    padding: 0;
+}
+.headingtext{
+    text-align: center;
+    color: rgb(8, 8, 8);
+    padding-top: 150px;
+    font-size: 48px;
+    font-family: font;  
+    margin-left: 30px; 
+}
+.Nelson{
+    text-align: right;    
+}
+.EduInfo{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+.uniandclg{
+    display: flex;
+}
+/* University box Styling */
+.uni,.college,.certificate{
+    margin-top: 150px;
+    background-color: white;
+    border-radius: 10px;
+    width: 40%;
+    border-color: white;
+    box-shadow:  0 0 10px #777777;
+
+}
+.uniImg,.clgImg,.ssuetpic{ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.unitext,.clgtext,.certificatetext{
+    text-align: center;
+    font-family: font;
+    font-size: 35px;
+    margin-top: 30px;
+}
+.college{
+    float: left;
+    margin-left: 200px;
+}
+.ssuetpic{
+    padding-top: 30px;
+    width: 90%;
+}
+.certificate{
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Portfolio */
+.firstImg{
+    background-position:  center;
+    background-size: cover;
+    border-top: 0;
+    display: -ms-flex;
+    height: 30rem !important;
+    min-height: 15rem;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    top: 52px;
+    background-image: linear-gradient(rgba(17, 17, 17, 0.25), rgba(17, 17, 17, 0.25)), url("images/portfolio.jpg");
+    margin: 0;
+    padding: 0;
+}
+.workInfo{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    margin-top: 100px;
+    text-align: center;
+}
+.firsttwo{
+    display: flex;
+    width: 100%;
+}
+.ludo{
+    margin-left: auto;
+    margin-right: auto;
+}
+.formpage{
+    margin-left: auto;
+    margin-right: auto;
+}
+.ludopic{
+    width: 70%;
+    height: 70%;
+}
+.formpic{
+    width: 70%;
+    height: 70%;
+}
+.textwork{
+    margin: 20px 0 20px 0;
+}
+.button{
+    background-color: gray;
+    color: white;
+    border-color: gray;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: black;    
+    box-shadow: 5px 15px 5px #777777;
+}
+.link:active{
+    background-color: red; 
+}
+.contactImg{
+    background-position:  center;
+    background-size: cover;
+    height: 30rem !important;
+    min-height: 15rem;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    top: 52px;
+}
+.contactDiv1{
+    background-color: white;
+    width: 60%;
+    margin: 0 20% 0 20%; 
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.us{
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+    border: 1px black solid;
+    background-color: lightgoldenrodyellow;
+    position: relative;
+    bottom: -15px;
+    line-height: 3.5rem;
+    font-size: 58px;
+    font-family: Courier New, Courier, monospace;
+}
+.ContactForm{
+    display: flex;
+    width: 100%;
+}
+.userForm{
+    margin: 50px 0 0 0;
+    width: 50%;
+}
+.text1{
+    font-family: Courier New, Courier, monospace;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 0 10px 200px;
+}
+.text2{
+    font-family: Courier New, Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(112, 92, 92);
+    margin: 0 0 15px 100px;
+}
+
+ .FormName{
+    width: 300px;
+    height: 30px;
+    margin-left: 200px;
+    bottom: 100px;
+    font-size: 20px;
+    margin: 0 0 50px 100px; 
+    
+} 
+ .FormEmail{
+
+    width: 300px;
+    height: 30px;
+    margin: 0 0 50px 100px; 
+    bottom: 100px;
+    font-size: 20px;
+    
+} 
+.comment{
+    font-size: 20px;
+    margin: 0 0 20px 100px; 
+}
+.submit{
+    border-radius: 5px ;
+    margin-left: 370px;
+    width: 80px;
+    height: 30px;
+    color: white;
+    background-color: black;
+    border-color: black;
+    margin-bottom: 100px;
+    font-family:Courier New, Courier, monospace;
+}
+.submit:hover{
+    box-shadow: 5px 5px 10px gray;
+    font-size: 20px;
+    color: black;
+    background-color: wheat;
+    border-color: wheat;
+    font-family: Courier New, Courier, monospace;
+}
+.FormEmail,.FormName,.comment{
+    border: 0;
+    border-bottom: 1px solid ;
+}
+.myData{
+    width: 50%;
+
+}
+.heighlight{
+    margin-top: 100px;
+    margin-left: 300px;
+}
+h3{
+    display: inline;
+    margin-left: 10px;
+}
+.locationimg,.callimg,.legalimg{
+    width: 15px;
+    height: 15px;
+}
+.data1{
+    margin: 20px 0 20px 35px;
+    color: gray;
+}   
+.data2{
+
+}

@@ -1,0 +1,160 @@
+body{
+    background: linear-gradient(white, #D3D8E8);
+}
+.head1{
+    height: 80px;
+    width: 100%;
+    background-color: rgb(59, 89, 152);
+    display:flex ;
+    justify-content: center;
+    align-content: center;
+}
+.FB0{
+    display: flex;
+    width: 60%;
+}
+.FB1{
+    font-weight: bold;
+    font-family: "Helvetica", Arial, sans-serif;
+    margin-top: 25px;
+    width: 100%;
+    font-size: 40px;
+    color: white;
+    margin-left: 230px;
+    float: left;
+}
+.head2{
+    display: flex;
+    justify-content: space-between;
+     width: 40%;  
+}
+.formh1{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    margin-left: 20px;
+    align-items: center;
+}
+.text,.button{
+    font-size: 14px;
+    color: white;
+}
+.button{
+    text-align: left;
+    font-size: 12px;
+    width: 45px;
+    background-color: #4267b2;
+    border-color: #4267b2;
+    
+}
+.email,.password,.button{
+    height: 20px;
+}
+.email,.password{
+    background-color:rgb(250, 255, 189);
+    border: 0.1px solid black;
+}
+.link,.linked{
+    margin-left: 3px;
+    color: #9cb4d8;
+    font-size: 13px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.link:hover{
+    text-decoration: underline;
+}
+.body2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.imageText{
+    width: 60%;
+    height: 100%;
+}
+.textBody{ 
+    margin-left: 250px; 
+    font-weight: bold;
+    margin-top: 40px;
+    color: #0e385f;
+    font-size: 20px;
+    height: 40%;
+    width: 450px;
+    word-spacing: -1px;
+}
+.img{
+    margin-left: 250px;
+}
+.bodyForm{
+    width: 40%;
+}
+.creatAccount{
+    margin-top: 35px;
+    color: #333;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+}
+.free{
+    color: #1d2129;
+    font-size: 19px;
+    margin-top: 5px;
+}
+.firtName,.lastName{
+    width: 167px;
+}
+.newPassword,.number,.Gender{
+    margin-top: 8px;
+    width: 350px;
+}
+.firtName,.lastName,.newPassword,.number{
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #bdc7d8;
+    font-size: 20px;
+}
+.BD{
+    font-size: 18px;
+}
+.Bday,.month,.year{
+    height: 30px;
+    width: 60px;
+}
+.linkBirth{
+    font-size: 12px;    
+    text-decoration: none;
+    border-width: 10%;
+}
+.Male,.Female{
+    font-size: 20px;
+}
+.lastText{
+    margin-top: 8px;
+    width: 60%;
+    font-size: 12px;
+    color: #777;    
+}
+.button2{
+    background:#69a74e;
+    color: white;
+    font-size: 20px;
+    width: 200px; 
+    border-color: 1px #777;
+    
+    height: 40px; 
+     margin-top: 10px;
+    border-radius: 5px;  
+}
+.myData{
+    margin-left: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.dev{
+    color: slateblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}

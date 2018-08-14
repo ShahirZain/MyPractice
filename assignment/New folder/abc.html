@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo App</title>
+    <style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+/* header Styling */
+.main{
+    background-color: rgb(19, 134, 19);
+    height: 100px;
+}
+.myHeading{
+    display: block;
+    color: white;
+    padding: 40px 0 5px 100px;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.main-body{
+    margin: 70px 0 0 200px;
+    border-color: darkgray;
+    border: 1px solid;
+    width: 50%;
+    background-color: darksgray;
+    border-radius: 5px;
+}
+.main-body1{
+    margin: 20px 20px  20px 20px;
+}
+.text{
+    height: 30px;
+    font-size: 20px;    
+    border-radius: 3px;
+    border: 1px solid black;
+    padding-left: 5px;
+}
+.btn{
+    width: 60px;
+    height: 30px;
+    font-size: 15px;
+    margin: 5px 5px 5px 20px; 
+    margin-left: 15px;  
+    border: 1px solid black;
+}
+.line{
+    width: 80%;
+    background-color: black;
+    margin: 20px;
+    margin-left: 55px;
+}
+.h2{
+    font-size: 30px;
+    margin: 10px;
+      
+}
+.ul{
+     list-style: none;
+}
+.listItem{
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 30px;
+    padding-left: 10px;
+}
+.button{
+    float: right;
+    margin: 5px 10px 5px 0;
+    height: 40%;
+    background-color: red;
+    border-color: red;  
+    padding: 3px;
+    color: white;
+}
+
+    </style>
+    
+</head>
+<body>
+
+    <!-- header -->
+
+    <div class="main">  
+            <header class="header">
+                <span class="myHeading">Todo Application</span>
+            </header>    
+    </div>
+
+    <!-- body of Html Document -->
+
+    <div class="main-body">
+        <div class="main-body1">
+            <h2 class="h2">Add Items</h2>
+            <form action="JAVASCRIPT:void(0)" class="form" id="form">
+                <input type="text" class="text" placeholder="Write your work" id="textNode" >
+                <input type="submit" value="Submit" class="btn" id="button">
+            </form>
+            <hr class="line">
+            <h2 class="h2">Item List</h2>
+            <ul class="ul" id="unoder">
+                <!-- <li class="listItem">xyz <button class="button">X</button></li> -->
+            </ul>
+        </div>
+    </div>
+    <script >
+    
+    
+var form = document.getElementById('form');
+var ul = document.getElementById('unoder');
+
+form.addEventListener('submit', Items );
+
+function Items(e){
+    e.preventDefault();
+    var newItem = document.getElementById('textNode').value;
+    var li = document.createElement('li');
+    li.className = 'listItem';
+    li.appendChild(document.createTextNode(newItem));
+    ul.appendChild(li);
+}
+    
+    </script>
+</body>
+</html>

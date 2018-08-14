@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <Style> 
+    body{
+        background-image: url("images/key.jpg");
+        }
+    .form{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 24px;
+        margin-left: 490px;
+        margin-top: 150px;  
+        width: 250px;
+        height: 350px;
+        border: 1px solid black;
+        padding: 30px;  
+        border-radius: 15px;
+    }
+    .form > .input{
+        color: rgb(104, 181, 248);
+        font-family: Cochin;
+        font-size: 19px;
+        margin: 10px;
+        border-radius: 5px;
+        margin-left: 30px;
+    }
+    .button{
+        text-transform: uppercase;
+        height: 30px;
+        width: 65px;
+        margin-left: 170px;
+        color: wheat;
+        background-color: brown;
+        border-color:brown;
+        border-radius: 5px;
+    }
+    span{
+        font-kerning: auto;
+        font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    }
+    .input:focus{
+        background-color: black;
+    }
+    .button:hover{
+        background-color: black;
+        border-color: black;
+    }
+    </Style>
+</head>
+<body>
+    <div>
+    <form action="#" class="form">
+       <span> Name </span> <br/>
+        <input type="text" class="input" required="required"> <br/>
+       <span> Father Name </span> <br/>
+        <input type="text" class="input" required="required"> <br/>
+        <span>    Address </span> <br/>
+        <input type="text" class="input" required="required"> <br/>
+        <span>  Email Address </span> <br/>
+        <input type="email" class="input" name="email" required="required"> <br/>
+        <input type="submit" class="button" value="submit">
+    </form>
+</div>
+</body>
+</html>
